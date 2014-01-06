@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.2" type="plugin" group="content" client="site" method="upgrade">
+   <name>Content - IDS KS Open API Joomla Plugin</name>
+   <author>@iLabAfrica</author>
+   <creationDate>April 2013</creationDate>
+   <copyright></copyright>
+   <license>see LICENSE.TXT</license>
+   <authorEmail>ilabafrica@strathmore.edu</authorEmail>
+   <authorUrl>http://ilabafrica.ac.ke</authorUrl>
+   <version>2.0</version>
+   <description>
+       <![CDATA[IDS Import plugin for Joomla enables a Joomla website to periodically import content made available by the IDS KS Open API.<br /><br />
+           <b>You will need to specify a valid API Key in the API Key field to the right.</b> If you don't have one, you can register for one at <a target="_blank" href="http://api.ids.ac.uk/accounts/register/">http://api.ids.ac.uk/accounts/register/</a>]]>
+   </description>
+   <files>
+       <filename plugin="idsplugin">idsplugin.php</filename>
+      
+   </files>
+   <config>
+      <fields name="params" >
+         <fieldset name="basic" label="Basic Configuration">
+            <field type="spacer" default="" />
+            <field name="api_key" size="50" required="true" type="guid" default="" label="API Key" description="Your IDS API Key or Token-GUID. To request one, visit http://api.ids.ac.uk/accounts/register/" />
+         </fieldset>
+      </fields>
+   </config>
+  
+</extension>

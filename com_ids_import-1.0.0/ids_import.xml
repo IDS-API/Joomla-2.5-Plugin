@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_ids_import</name>
+    <creationDate>2013-04-24</creationDate>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>@iLabAfrica</author>
+    <authorEmail>info@ilabafrica.ac.ke</authorEmail>
+    <authorUrl>ilabafrica.ac.ke</authorUrl>
+    <version>1.0.0</version>
+    <description><![CDATA[IDS Import Component for Joomla enables Joomla website admins to import content made available by the IDS KS Open API. This content includes tens of thousands of thematically organised research documents that are freely available online. <br /><br />
+        For this to work you will need to specify a valid API Key in the <b>Content - IDS KS Open API Joomla Plugin</b>. If you don't have one, you can register for one at <a target="_blank" href="http://api.ids.ac.uk/accounts/register/">http://api.ids.ac.uk/accounts/register/</a>]]>
+    </description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+   
+    <administration>
+        <menu img="components/com_ids_import/assets/images/s_com_ids_import.png" >COM_IDS_IMPORT</menu>
+      
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>ids_import.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            
+			<language tag="en-GB">language/en-GB.com_ids_import.ini</language>
+			<language tag="en-GB">language/en-GB.com_ids_import.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.notwebdesign.com/joomla-component-creator/ -->

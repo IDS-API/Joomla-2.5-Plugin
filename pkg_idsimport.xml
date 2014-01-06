@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="1.6">
+ <name>IDS import</name>
+ <author>@iLabAfrica</author>
+ <creationDate>April 2013</creationDate>
+ <packagename>idsimport</packagename>
+ <version>1.0.0</version>
+ <url>http://ilabafrica.ac.ke</url>
+ <packager>@iLabAfrica</packager>
+ <packagerurl>http://ilabafrica.ac.ke</packagerurl>
+ <description><![CDATA[You've successfully installed the <em>Content - IDS KS Open API Joomla Plugin</em> and <em>IDS Import Component</em> for Joomla.<br /><br />
+     1. Go to Extensions > Plug-in Manager and search for the <em>Content - IDS KS Open API Joomla Plugin</em>.<br />
+     2. Open the plugin, set its status to Enabled and specify a valid API Key. If you don't have one, you can register for one at <a target="_blank" href="http://api.ids.ac.uk/accounts/register/">http://api.ids.ac.uk/accounts/register/</a><br />
+     3. Access the IDS Import Component through Components > IDS Import menu.<br /><br />
+     You'll be set to import content from IDS to your website.]]>
+</description>
+ <update>http://ilabafrica.ac.ke</update>
+ <files >
+   <file type="component" id="idsimport" >com_ids_import-1.0.0.zip</file>
+   <file type="plugin" id="idsimport" group="system">idsplugin.zip</file>
+ </files>
+ </extension>
